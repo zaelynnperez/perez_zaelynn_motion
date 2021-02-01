@@ -1,7 +1,7 @@
 while (true) {
-    console.log(input.rotation(Rotation.Pitch))
-    if (input.rotation(Rotation.Pitch) > 0 || input.rotation(Rotation.Pitch) < 0) {
-        light.setAll(light.rgb(255, 0, 255))
+    console.log(input.acceleration(Dimension.X))
+    if (input.acceleration(Dimension.X) < 1) {
+        light.setAll(light.rgb(255, 165, 150))
     } else {
         light.clear()
     }
